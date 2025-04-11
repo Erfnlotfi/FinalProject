@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace View
 {
-    public partial class PersonForm: Form
+    public partial class PersonForm : Form
     {
         public PersonForm()
         {
             InitializeComponent();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
         }
     }
 }

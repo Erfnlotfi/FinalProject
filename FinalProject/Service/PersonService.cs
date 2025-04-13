@@ -1,4 +1,6 @@
-﻿using Model;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Model;
 using Model.DomainModels;
 using Service.DTO;
 using System;
@@ -9,12 +11,22 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-   public class PersonService
+    public class PersonService
     {
-     private readonly PersonServiceModel _personServiceModel;
+        private readonly PersonServiceModel _personServiceModel;
         public PersonService()
         {
             _personServiceModel = new PersonServiceModel();
+        }
+        public void Post(PostPersonDto dto)
+        {
+            var Person = new Person()
+            {
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
+                NationalId = dto.Nationalid,
+            };
+            _personServiceModel.Post(Person);
         }
         public List<Person> GetAll()
         {
@@ -33,5 +45,7 @@ namespace Service
             }
             return persons;
         }
+
     }
 }
+

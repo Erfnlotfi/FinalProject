@@ -18,7 +18,7 @@ namespace Model
         public FinalProjectDbContext() { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: "Data Source = DESKTOP - 1F3UU3Q; Initial Catalog=FinalProject;Integrated Security=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(connectionString: "Server=DESKTOP-1F3UU3Q;Database=FinalProject;Trusted_Connection=True;TrustServerCertificate=True;");
         }
         public DbSet<Person> Person { get; set; }
         public DbSet<Product> Product { get; set; }

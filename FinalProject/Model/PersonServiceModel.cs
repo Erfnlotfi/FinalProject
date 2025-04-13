@@ -9,6 +9,29 @@ namespace Model
 {
    public class PersonServiceModel
     {
+        public void Post(Person person) 
+        {
+            using (var Context = new FinalProjectDbContext())
+            {
+                try
+                {
+                    Context.Add(person);
+                    Context.SaveChanges();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                finally
+                {
+                    if (Context != null)
+                        Context.Dispose();
+                }
+            }
+
+        }
+        
         public List<Person> SelectAll()
         {
             using (var Context = new FinalProjectDbContext())

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using Service;
+using Service.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +16,12 @@ namespace View
 {
     public partial class PersonForm : Form
     {
+        private readonly PersonService _personService;
+
         public PersonForm()
         {
             InitializeComponent();
+            _personService=new PersonService();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -27,24 +33,31 @@ namespace View
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtFirstName.Text) && !string.IsNullOrWhiteSpace(txtLastName.Text) && !string.IsNullOrWhiteSpace(txtNationalId.Text) && !string.IsNullOrEmpty(txtId.Text))
+            var p = new PostPersonDto()
             {
-                dgvPeople.Rows.Add(txtId.Text, txtFirstName.Text, txtLastName.Text, txtNationalId.Text);
+                FirstName = txtFirstName.Text,
+                LastName = txtLastName.Text,
+                Nationalid = txtNationalId.Text,
+            };
+            _personService.Post(p);
+           
+
                 txtFirstName.Clear();
                 txtLastName.Clear();
                 txtNationalId.Clear();
-                txtId.Clear();
-                txtId.Focus();
-            }
-            else
-            {
-                MessageBox.Show("Please dont let the textbox be null");
-            }
+            
         }
+        
 
         private void PersonForm_Load(object sender, EventArgs e)
         {
-            txtId.Focus();
+            txtFirstName.Focus();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dgvPeople.DataSource = _personService.GetAll();
+            MessageBox.Show("Done!");
         }
     }
 }

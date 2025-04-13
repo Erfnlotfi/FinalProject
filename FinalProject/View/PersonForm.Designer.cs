@@ -40,19 +40,13 @@
             btnDelete = new Button();
             btnRefresh = new Button();
             dgvPeople = new DataGridView();
-            clmId = new DataGridViewTextBoxColumn();
-            clmFirstName = new DataGridViewTextBoxColumn();
-            clmLastName = new DataGridViewTextBoxColumn();
-            clmNationalid = new DataGridViewTextBoxColumn();
-            txtId = new TextBox();
-            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(17, 73);
+            label1.Location = new Point(16, 28);
             label1.Name = "label1";
             label1.Size = new Size(84, 20);
             label1.TabIndex = 0;
@@ -61,7 +55,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(17, 125);
+            label2.Location = new Point(14, 99);
             label2.Name = "label2";
             label2.Size = new Size(86, 20);
             label2.TabIndex = 1;
@@ -78,14 +72,14 @@
             // 
             // txtFirstName
             // 
-            txtFirstName.Location = new Point(109, 70);
+            txtFirstName.Location = new Point(109, 25);
             txtFirstName.Name = "txtFirstName";
             txtFirstName.Size = new Size(125, 27);
             txtFirstName.TabIndex = 2;
             // 
             // txtLastName
             // 
-            txtLastName.Location = new Point(109, 122);
+            txtLastName.Location = new Point(109, 96);
             txtLastName.Name = "txtLastName";
             txtLastName.Size = new Size(125, 27);
             txtLastName.TabIndex = 3;
@@ -122,7 +116,7 @@
             // btnEdit
             // 
             btnEdit.BackColor = Color.FromArgb(255, 224, 192);
-            btnEdit.Location = new Point(395, 25);
+            btnEdit.Location = new Point(409, 25);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(94, 50);
             btnEdit.TabIndex = 7;
@@ -132,7 +126,7 @@
             // btnDelete
             // 
             btnDelete.BackColor = Color.FromArgb(255, 224, 192);
-            btnDelete.Location = new Point(517, 25);
+            btnDelete.Location = new Point(537, 25);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 50);
             btnDelete.TabIndex = 8;
@@ -142,67 +136,22 @@
             // btnRefresh
             // 
             btnRefresh.BackColor = Color.FromArgb(255, 224, 192);
-            btnRefresh.Location = new Point(637, 25);
+            btnRefresh.Location = new Point(675, 25);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(94, 50);
             btnRefresh.TabIndex = 9;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = false;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // dgvPeople
             // 
-            dgvPeople.BackgroundColor = SystemColors.Menu;
             dgvPeople.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPeople.Columns.AddRange(new DataGridViewColumn[] { clmId, clmFirstName, clmLastName, clmNationalid });
-            dgvPeople.Location = new Point(275, 99);
+            dgvPeople.Location = new Point(275, 122);
             dgvPeople.Name = "dgvPeople";
             dgvPeople.RowHeadersWidth = 51;
-            dgvPeople.Size = new Size(494, 274);
-            dgvPeople.TabIndex = 23;
-            // 
-            // clmId
-            // 
-            clmId.HeaderText = "Id";
-            clmId.MinimumWidth = 6;
-            clmId.Name = "clmId";
-            clmId.Width = 110;
-            // 
-            // clmFirstName
-            // 
-            clmFirstName.HeaderText = "First Name";
-            clmFirstName.MinimumWidth = 6;
-            clmFirstName.Name = "clmFirstName";
-            clmFirstName.Width = 110;
-            // 
-            // clmLastName
-            // 
-            clmLastName.HeaderText = "Lastname";
-            clmLastName.MinimumWidth = 6;
-            clmLastName.Name = "clmLastName";
-            clmLastName.Width = 110;
-            // 
-            // clmNationalid
-            // 
-            clmNationalid.HeaderText = "National id";
-            clmNationalid.MinimumWidth = 6;
-            clmNationalid.Name = "clmNationalid";
-            clmNationalid.Width = 110;
-            // 
-            // txtId
-            // 
-            txtId.Location = new Point(109, 25);
-            txtId.Name = "txtId";
-            txtId.Size = new Size(125, 27);
-            txtId.TabIndex = 1;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(71, 25);
-            label4.Name = "label4";
-            label4.Size = new Size(29, 20);
-            label4.TabIndex = 25;
-            label4.Text = "Id :";
+            dgvPeople.Size = new Size(494, 251);
+            dgvPeople.TabIndex = 26;
             // 
             // PersonForm
             // 
@@ -210,8 +159,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Beige;
             ClientSize = new Size(800, 450);
-            Controls.Add(label4);
-            Controls.Add(txtId);
             Controls.Add(dgvPeople);
             Controls.Add(btnRefresh);
             Controls.Add(btnDelete);
@@ -246,11 +193,5 @@
         private Button btnDelete;
         private Button btnRefresh;
         private DataGridView dgvPeople;
-        private DataGridViewTextBoxColumn clmId;
-        private DataGridViewTextBoxColumn clmFirstName;
-        private DataGridViewTextBoxColumn clmLastName;
-        private DataGridViewTextBoxColumn clmNationalid;
-        private TextBox txtId;
-        private Label label4;
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.DomainModels
+namespace Service.DTO
 {
-  public  class Person
+    public class EditPersonDto
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

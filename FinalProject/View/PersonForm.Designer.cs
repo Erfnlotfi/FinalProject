@@ -40,6 +40,8 @@
             btnDelete = new Button();
             btnRefresh = new Button();
             dgvPeople = new DataGridView();
+            txtId = new TextBox();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
             SuspendLayout();
             // 
@@ -153,12 +155,30 @@
             dgvPeople.Size = new Size(494, 251);
             dgvPeople.TabIndex = 26;
             // 
+            // txtId
+            // 
+            txtId.Location = new Point(109, 237);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(125, 27);
+            txtId.TabIndex = 27;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(67, 240);
+            label4.Name = "label4";
+            label4.Size = new Size(33, 20);
+            label4.TabIndex = 28;
+            label4.Text = " Id :";
+            // 
             // PersonForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Beige;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
+            Controls.Add(txtId);
             Controls.Add(dgvPeople);
             Controls.Add(btnRefresh);
             Controls.Add(btnDelete);
@@ -193,5 +213,7 @@
         private Button btnDelete;
         private Button btnRefresh;
         private DataGridView dgvPeople;
+        private TextBox txtId;
+        private Label label4;
     }
 }

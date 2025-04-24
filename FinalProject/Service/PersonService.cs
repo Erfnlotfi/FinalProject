@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Model;
 using Model.DomainModels;
+using Model.ServiceModels;
 using Service.DTO;
 using System;
 using System.Collections.Generic;
@@ -45,7 +45,26 @@ namespace Service
             }
             return persons;
         }
+        public void Edit(EditPersonDto editPersonDto)
+        {
+            var person = new Person()
+            {
+                Id = editPersonDto.Id,
+                FirstName = editPersonDto.FirstName,
+                LastName = editPersonDto.LastName,
+                NationalId = editPersonDto.NationalId,
+            };
+            _personServiceModel.Edit(person);
+        }
 
+        public void Delete(DeletePersonDto DeletePersonDto)
+        {
+            var person = new Person()
+            {
+                Id = DeletePersonDto.Id
+            };
+            _personServiceModel.Delete(person);
+        }
     }
 }
 

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Service.DTO
 {
-   public class GetPersonDto
+    public class DeletePersonDto
     {
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public int Nationalid { get; set; }
     }
 }

@@ -40,6 +40,8 @@
             label2 = new Label();
             label1 = new Label();
             dgvProducts = new DataGridView();
+            txtId = new TextBox();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvProducts).BeginInit();
             SuspendLayout();
             // 
@@ -152,12 +154,30 @@
             dgvProducts.Size = new Size(456, 274);
             dgvProducts.TabIndex = 22;
             // 
+            // txtId
+            // 
+            txtId.Location = new Point(118, 180);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(125, 27);
+            txtId.TabIndex = 23;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(83, 183);
+            label4.Name = "label4";
+            label4.Size = new Size(29, 20);
+            label4.TabIndex = 24;
+            label4.Text = "Id :";
+            // 
             // ProductForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Beige;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
+            Controls.Add(txtId);
             Controls.Add(dgvProducts);
             Controls.Add(btnRefresh);
             Controls.Add(btnDelete);
@@ -191,5 +211,7 @@
         private Label label2;
         private Label label1;
         private DataGridView dgvProducts;
+        private TextBox txtId;
+        private Label label4;
     }
 }

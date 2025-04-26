@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.DomainModels
+namespace Service.DTO
 {
-  public  class Product
+    public class PostProductDto
     {
-        public int Id { get; set; }
         public string ProductName { get; set; }
         public int ProductId { get; set; }
         public int ProductPrice { get; set; }

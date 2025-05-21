@@ -35,22 +35,26 @@
             // 
             // btnPerson
             // 
+            btnPerson.BackColor = Color.FromArgb(255, 224, 192);
+            btnPerson.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
             btnPerson.Location = new Point(106, 197);
             btnPerson.Name = "btnPerson";
             btnPerson.Size = new Size(142, 90);
             btnPerson.TabIndex = 0;
             btnPerson.Text = "Person";
-            btnPerson.UseVisualStyleBackColor = true;
+            btnPerson.UseVisualStyleBackColor = false;
             btnPerson.Click += btnPerson_Click;
             // 
             // btnProduct
             // 
+            btnProduct.BackColor = Color.FromArgb(255, 224, 192);
+            btnProduct.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
             btnProduct.Location = new Point(484, 197);
             btnProduct.Name = "btnProduct";
             btnProduct.Size = new Size(142, 90);
             btnProduct.TabIndex = 1;
             btnProduct.Text = "Product";
-            btnProduct.UseVisualStyleBackColor = true;
+            btnProduct.UseVisualStyleBackColor = false;
             btnProduct.Click += btnProduct_Click;
             // 
             // label1
@@ -69,6 +73,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
             Controls.Add(btnProduct);

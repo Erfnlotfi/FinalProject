@@ -111,67 +111,85 @@
             // 
             // dgvPerson
             // 
+            dgvPerson.BackgroundColor = Color.White;
             dgvPerson.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPerson.GridColor = SystemColors.Desktop;
             dgvPerson.Location = new Point(237, 59);
             dgvPerson.Name = "dgvPerson";
             dgvPerson.RowHeadersWidth = 51;
-            dgvPerson.Size = new Size(400, 247);
+            dgvPerson.Size = new Size(432, 247);
             dgvPerson.TabIndex = 8;
             // 
             // btnAdd
             // 
+            btnAdd.BackColor = Color.Black;
+            btnAdd.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAdd.ForeColor = Color.White;
             btnAdd.Location = new Point(237, 12);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(67, 29);
+            btnAdd.Size = new Size(102, 41);
             btnAdd.TabIndex = 9;
             btnAdd.Text = "Add";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click_1;
             // 
             // btnEdit
             // 
+            btnEdit.BackColor = Color.Black;
+            btnEdit.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEdit.ForeColor = Color.White;
             btnEdit.Location = new Point(345, 12);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(67, 29);
+            btnEdit.Size = new Size(103, 41);
             btnEdit.TabIndex = 10;
             btnEdit.Text = "Edit";
-            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.UseVisualStyleBackColor = false;
             btnEdit.Click += btnEdit_Click_1;
             // 
             // btnRefresh
             // 
-            btnRefresh.Location = new Point(453, 12);
+            btnRefresh.BackColor = Color.Black;
+            btnRefresh.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRefresh.ForeColor = Color.White;
+            btnRefresh.Location = new Point(457, 12);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(67, 29);
+            btnRefresh.Size = new Size(103, 41);
             btnRefresh.TabIndex = 11;
             btnRefresh.Text = "Refresh";
-            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.UseVisualStyleBackColor = false;
             btnRefresh.Click += btnRefresh_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(558, 12);
+            btnDelete.BackColor = Color.Black;
+            btnDelete.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Location = new Point(566, 12);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(67, 29);
+            btnDelete.Size = new Size(103, 41);
             btnDelete.TabIndex = 12;
             btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click_1;
             // 
             // btnBack
             // 
+            btnBack.BackColor = Color.Black;
+            btnBack.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack.ForeColor = Color.White;
             btnBack.Location = new Point(12, 366);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(94, 57);
             btnBack.TabIndex = 13;
             btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
+            btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
             // PersonForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(670, 450);
             Controls.Add(btnBack);
             Controls.Add(btnDelete);

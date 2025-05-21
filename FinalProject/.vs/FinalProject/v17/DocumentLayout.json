@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "F:\\c#\\FinalProject\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3405EB91-2951-45F9-B9BE-E87F8BBE3405}|View\\View.csproj|f:\\c#\\finalproject\\finalproject\\view\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3405EB91-2951-45F9-B9BE-E87F8BBE3405}|View\\View.csproj|solutionrelative:view\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3405EB91-2951-45F9-B9BE-E87F8BBE3405}|View\\View.csproj|f:\\c#\\finalproject\\finalproject\\view\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3405EB91-2951-45F9-B9BE-E87F8BBE3405}|View\\View.csproj|solutionrelative:view\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3405EB91-2951-45F9-B9BE-E87F8BBE3405}|View\\View.csproj|F:\\c#\\FinalProject\\FinalProject\\view\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3405EB91-2951-45F9-B9BE-E87F8BBE3405}|View\\View.csproj|solutionrelative:view\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3405EB91-2951-45F9-B9BE-E87F8BBE3405}|View\\View.csproj|f:\\c#\\finalproject\\finalproject\\view\\personform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3405EB91-2951-45F9-B9BE-E87F8BBE3405}|View\\View.csproj|solutionrelative:view\\personform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +18,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductForm.cs",
-              "DocumentMoniker": "F:\\c#\\FinalProject\\FinalProject\\View\\ProductForm.cs",
-              "RelativeDocumentMoniker": "View\\ProductForm.cs",
-              "ToolTip": "F:\\c#\\FinalProject\\FinalProject\\View\\ProductForm.cs",
-              "RelativeToolTip": "View\\ProductForm.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAIwHIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T14:11:45.704Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PersonForm.cs [Design]",
+              "DocumentMoniker": "F:\\c#\\FinalProject\\FinalProject\\View\\PersonForm.cs",
+              "RelativeDocumentMoniker": "View\\PersonForm.cs",
+              "ToolTip": "F:\\c#\\FinalProject\\FinalProject\\View\\PersonForm.cs [Design]",
+              "RelativeToolTip": "View\\PersonForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T18:11:31.842Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ProductForm.cs [Design]",
               "DocumentMoniker": "F:\\c#\\FinalProject\\FinalProject\\View\\ProductForm.cs",
               "RelativeDocumentMoniker": "View\\ProductForm.cs",
               "ToolTip": "F:\\c#\\FinalProject\\FinalProject\\View\\ProductForm.cs [Design]",
               "RelativeToolTip": "View\\ProductForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T14:11:39.931Z"
+              "WhenOpened": "2025-05-21T18:07:16.058Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
